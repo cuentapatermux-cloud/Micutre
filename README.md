@@ -77,3 +77,7 @@ The Space Grotesk font is licensed under the SIL Open Font License 1.1. The [`ap
 ## Contributing
 
 For now, you can open an *issue* to report a bug or suggest an improvement. Contribution guidelines will be added once the project workflow is established.
+
+## A note
+
+Micutre is a learning project, so I may not be able to fix every issue right away. Even so, I appreciate every bug report.
