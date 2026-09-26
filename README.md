@@ -1,37 +1,37 @@
 <div align="center">
-  <img src="docs/micutre-icon.svg" width="128" alt="Icono de Micutre: micrófono azul con cabeza negra sobre fondo blanco" />
+  <img src="docs/micutre-icon.svg" width="128" alt="Micutre microphone icon with a white outline on a transparent background" />
   <h1>Micutre</h1>
   <p>Copyright 2026 PollNull</p>
-  <p><strong>Tu celular como micrófono inalámbrico para un parlante Bluetooth.</strong></p>
+  <p><strong>Turn your phone into a wireless microphone for a Bluetooth speaker.</strong></p>
   <p>Android · Kotlin · C++ · Oboe</p>
 </div>
 
 ---
 
-Micutre transmite en vivo el audio del micrófono del teléfono al parlante Bluetooth que Android tenga conectado. También incluye efectos de voz personalizados mediante presets JSON y un soundboard al que puedes importar tus propios audios.
+Micutre streams your phone's microphone audio live to the Bluetooth speaker connected to Android. It also includes custom voice effects through JSON presets and a soundboard where you can import your own audio files.
 
-> **Estado:** proyecto personal en desarrollo — versión 0.1.0.
+> **Status:** personal project in development — version 0.1.0.
 
-## Funciones
+## Features
 
-- Micrófono en vivo, control de volumen y detección del parlante conectado.
-- Efectos de voz: tono más agudo o grave, eco y efecto robótico.
-- Soundboard para sonidos importados desde el teléfono.
-- Importación de audio MP3, WAV, M4A/AAC, OGG/Vorbis, Opus y FLAC, según los decodificadores disponibles en Android.
-- Interfaz en español, inglés y chino simplificado, con opciones de movimiento reducido y texto en negrita.
-- Importación de presets JSON para crear efectos de voz personalizados; hay un ejemplo en [`examples/voz-espacial.json`](examples/voz-espacial.json).
+- Live microphone, volume control, and connected speaker detection.
+- Voice effects: higher or lower pitch, echo, and robot voice.
+- Soundboard for audio imported from your phone.
+- Imports MP3, WAV, M4A/AAC, OGG/Vorbis, Opus, and FLAC, depending on the decoders available on Android.
+- Interface in Spanish, English, and Simplified Chinese, with reduced motion and bold text options.
+- Import JSON presets to create custom voice effects; see the example in [`examples/voz-espacial.json`](examples/voz-espacial.json).
 
-## Compilar
+## Build
 
-Necesitas JDK 17 y Android SDK con Platform 35, Build Tools 35.0.0, NDK 27.2.12479018 y CMake 3.22.1. Para instalar con `install-debug.ps1`, también necesitas Android SDK Platform-Tools (ADB).
+You need JDK 17 and the Android SDK with Platform 35, Build Tools 35.0.0, NDK 27.2.12479018, and CMake 3.22.1. To install with `install-debug.ps1`, you also need Android SDK Platform-Tools (ADB).
 
-Configura localmente la ruta de tu Android SDK con `ANDROID_HOME` o `ANDROID_SDK_ROOT`. Como alternativa, crea `local.properties` en la raíz del proyecto con esta línea:
+Configure your Android SDK path locally with `ANDROID_HOME` or `ANDROID_SDK_ROOT`. Alternatively, create `local.properties` in the project root with this line:
 
 ```properties
-sdk.dir=/ruta/a/tu/Android/Sdk
+sdk.dir=/path/to/your/Android/Sdk
 ```
 
-No subas `local.properties` ni rutas locales al repositorio. El proyecto incluye Gradle Wrapper, así que no necesitas instalar Gradle por separado. Desde la raíz, ejecuta una compilación limpia:
+Do not commit `local.properties` or machine-specific paths. The project includes the Gradle Wrapper, so you do not need to install Gradle separately. From the project root, run a clean build:
 
 ```shell
 # Windows
@@ -41,39 +41,39 @@ No subas `local.properties` ni rutas locales al repositorio. El proyecto incluye
 ./gradlew clean assembleDebug
 ```
 
-El APK de depuración queda en `app/build/outputs/apk/debug/app-debug.apk`. Para compilar e instalarlo en un teléfono conectado por USB, habilita la depuración USB y ejecuta:
+The debug APK is created at `app/build/outputs/apk/debug/app-debug.apk`. To build and install it on a phone connected over USB, enable USB debugging and run:
 
 ```powershell
 .\install-debug.ps1
 ```
 
-El script usa ADB incluido en el Android SDK instalado en tu equipo; no hace falta versionar las herramientas binarias de ADB dentro del repositorio.
+The script uses ADB from the Android SDK installed on your computer; you do not need to add ADB binaries to the repository.
 
-## Privacidad y limitaciones
+## Privacy and limitations
 
-La app necesita permiso de micrófono mientras transmite. El retardo depende del teléfono, la versión de Android y el parlante: Bluetooth añade latencia que la app no puede eliminar. Mantén el teléfono apartado del parlante para reducir el acople.
+The app needs microphone permission while streaming. Latency depends on the phone, Android version, and speaker; Bluetooth adds latency that the app cannot eliminate. Keep the phone away from the speaker to reduce feedback.
 
-La versión actual no transmite con la pantalla apagada, no permite elegir el parlante desde la app y no mide la latencia por modelo.
+The current version does not stream while the screen is off, let you choose a speaker in the app, or measure latency for each device model.
 
-## Licencia
+## License
 
-El código fuente propio de Micutre se distribuye bajo Apache License 2.0. Consulta el archivo [`LICENSE`](LICENSE). Los recursos de Micutre enumerados a continuación también se distribuyen bajo Apache-2.0. Los recursos de terceros conservan sus propias licencias.
+Micutre's original source code is distributed under the Apache License 2.0. See [`LICENSE`](LICENSE). The Micutre resources listed below are also distributed under Apache-2.0. Third-party resources retain their own licenses.
 
-### Recursos generados con asistencia de IA
+### Resources created with AI assistance
 
-Los siguientes recursos se generaron con asistencia de OpenAI Codex y se distribuyen bajo Apache-2.0:
+The following resources were generated with assistance from OpenAI Codex and are distributed under Apache-2.0:
 
-- Icono del README: [`docs/micutre-icon.svg`](docs/micutre-icon.svg).
-- Iconos de la app: `app/src/main/res/drawable/ic_micutre_foreground.xml`, `app/src/main/res/drawable/ic_micutre_monochrome.xml`, `app/src/main/res/mipmap/ic_launcher.xml`, `app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml` y `app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml`.
-- Iconos de reproducción: `app/src/main/res/drawable/ic_play.xml` y `app/src/main/res/drawable/ic_pause.xml`.
-- Ejemplo de preset: [`examples/voz-espacial.json`](examples/voz-espacial.json).
+- README icon: [`docs/micutre-icon.svg`](docs/micutre-icon.svg).
+- App icons: `app/src/main/res/drawable/ic_micutre_foreground.xml`, `app/src/main/res/drawable/ic_micutre_monochrome.xml`, `app/src/main/res/mipmap/ic_launcher.xml`, `app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml`, and `app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml`.
+- Playback icons: `app/src/main/res/drawable/ic_play.xml` and `app/src/main/res/drawable/ic_pause.xml`.
+- Preset example: [`examples/voz-espacial.json`](examples/voz-espacial.json).
 
-Esta atribución documenta la asistencia de IA y no presenta estos recursos como creados exclusivamente por una persona.
+This attribution documents AI assistance and does not present these resources as created exclusively by a human.
 
-### Recurso de terceros con licencia propia
+### Third-party resource under its own license
 
-La fuente Space Grotesk está bajo SIL Open Font License 1.1. El archivo [`app/src/main/assets/fonts/OFL.txt`](app/src/main/assets/fonts/OFL.txt) contiene su licencia y la atribución: Copyright 2020 The Space Grotesk Project Authors.
+The Space Grotesk font is licensed under the SIL Open Font License 1.1. The [`app/src/main/assets/fonts/OFL.txt`](app/src/main/assets/fonts/OFL.txt) file contains its license and attribution: Copyright 2020 The Space Grotesk Project Authors.
 
-## Contribuir
+## Contributing
 
-Por ahora, puedes abrir un *issue* para informar un error o proponer una mejora. Se agregarán instrucciones para contribuciones cuando el flujo del proyecto esté definido.
+For now, you can open an *issue* to report a bug or suggest an improvement. Contribution guidelines will be added once the project workflow is established.
