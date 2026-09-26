@@ -1,10 +1,6 @@
 <div align="center">
   <img src="docs/micutre-icon.svg" width="320" alt="Micutre microphone icon with a white outline on a transparent background" />
   <h1>Micutre — Android Bluetooth Microphone</h1>
-  <p>Copyright 2026 PollNull</p>
-  <p><strong>Open-source Android app for using your phone as a microphone with a Bluetooth speaker, voice effects, and a soundboard.</strong></p>
-  <p>Android · Kotlin · C++ · Oboe</p>
-</div>
 
 <p align="center">
   <a href="https://github.com/pollnull/Micutre/blob/main/LICENSE">
@@ -14,6 +10,11 @@
     <img src="https://img.shields.io/github/v/release/pollnull/Micutre" alt="Latest release" />
   </a>
 </p>
+
+  <p>Copyright 2026 PollNull</p>
+  <p><strong>Open-source Android app for using your phone as a microphone with a Bluetooth speaker, voice effects, and a soundboard.</strong></p>
+  <p>Android · Kotlin · C++ · Oboe</p>
+</div>
 
 ---
 
