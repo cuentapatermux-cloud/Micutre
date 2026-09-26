@@ -80,4 +80,4 @@ For now, you can open an *issue* to report a bug or suggest an improvement. Cont
 
 ## A note
 
-Micutre is a learning project, so I may not be able to fix every issue right away. Even so, I appreciate every bug report.
+I’m a young student still in school. Micutre is a learning project, so I may not be able to fix every issue right away. Even so, I appreciate every bug report.
