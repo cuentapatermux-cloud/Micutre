@@ -1,0 +1,10 @@
+<!-- Copyright 2026 PollNull -->
+<resources>
+    <style name="Theme.Micutre" parent="Theme.Material3.DynamicColors.DayNight.NoActionBar">
+        <item name="android:statusBarColor">?attr/colorSurface</item>
+        <item name="android:navigationBarColor">?attr/colorSurface</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="android:windowLightNavigationBar">false</item>
+        <item name="android:fontFamily">sans</item>
+    </style>
+</resources>

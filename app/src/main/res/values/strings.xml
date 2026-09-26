@@ -1,0 +1,96 @@
+<!-- Copyright 2026 PollNull -->
+<resources>
+    <string name="app_name">Micutre</string>
+    <string name="volume_percent">%1$d%%</string>
+    <string name="mic_header">MICRÓFONO EN VIVO</string>
+    <string name="effects_header">EFECTOS DE VOZ</string>
+    <string name="import_effect">＋ Importar</string>
+    <string name="mic_off">APAGADO</string>
+    <string name="bluetooth_disconnected">BLUETOOTH DESCONECTADO</string>
+    <string name="bluetooth_connected">BLUETOOTH CONECTADO</string>
+    <string name="no_device_connected">Sin dispositivo conectado</string>
+    <string name="bluetooth_speaker">Parlante Bluetooth</string>
+    <string name="microphone_note">Mantén el teléfono apartado del parlante para evitar acoples.</string>
+    <string name="soundboard_hint">SOUNDBOARD  →  Desliza a la izquierda</string>
+    <string name="microphone_page_label">←  MICRÓFONO</string>
+    <string name="soundboard_title">SOUNDBOARD</string>
+    <string name="soundboard_instructions">Importa audios para agregarlos y reproducirlos.</string>
+    <string name="import_audio">＋  Importar audios</string>
+    <string name="audio_formats_short">MP3 · WAV · M4A/AAC · OGG/Vorbis · Opus · FLAC</string>
+    <string name="ready">Listo</string>
+    <string name="stop">Detener</string>
+    <string name="rename_sound">Renombrar sonido</string>
+    <string name="delete_sound">Eliminar sonido</string>
+    <string name="confirm_delete_sound">¿Eliminar «%1$s» del soundboard?</string>
+    <string name="cancel">Cancelar</string>
+    <string name="got_it">Entendido</string>
+    <string name="save">Guardar</string>
+    <string name="empty_sound_name">Escribe un nombre para el sonido.</string>
+    <string name="pin_sound">Fijar</string>
+    <string name="rename_effect">Renombrar efecto</string>
+    <string name="pin_effect">Fijar</string>
+    <string name="unpin_effect">Quitar fijado</string>
+    <string name="delete_effect">Eliminar efecto</string>
+    <string name="confirm_delete_effect">¿Eliminar el efecto «%1$s»?</string>
+    <string name="empty_effect_name">Escribe un nombre para el efecto.</string>
+    <string name="delete">Eliminar</string>
+    <string name="loop_sound">Reproducir en bucle</string>
+    <string name="audio_formats_title">Formatos compatibles</string>
+    <string name="audio_formats_message">MP3 (.mp3), WAV (.wav), AAC/M4A (.aac, .m4a), OGG/Vorbis (.ogg), Opus (.opus, .ogg) y FLAC (.flac). La reproducción depende del códec incluido en Android y del dispositivo.</string>
+    <string name="choose_files">Elegir archivos</string>
+    <string name="audio_picker_title">Audio: MP3, WAV, AAC/M4A, OGG, Opus, FLAC</string>
+    <plurals name="audio_added">
+        <item quantity="one">%1$d audio agregado</item>
+        <item quantity="other">%1$d audios agregados</item>
+    </plurals>
+    <string name="audio_imported_name">Audio importado</string>
+    <string name="audio_unavailable_format">Formato no compatible</string>
+    <string name="android_audio_failed">Android no pudo reproducir este audio.</string>
+    <string name="playing_sound">Reproduciendo: %1$s</string>
+    <string name="loading_sound">Cargando: %1$s</string>
+    <string name="audio_open_failed">No se pudo abrir el audio</string>
+    <string name="audio_open_failed_named">No se pudo abrir %1$s.</string>
+    <string name="effect_natural">Natural</string>
+    <string name="effect_high">Aguda</string>
+    <string name="effect_echo">Eco</string>
+    <string name="effect_low">Grave</string>
+    <string name="effect_robotic">Robótica</string>
+    <string name="effect_content_description">Efecto %1$s</string>
+    <string name="effect_imported">Efecto %1$s importado</string>
+    <string name="effect_import_failed">No se pudo importar</string>
+    <string name="effect_import_fallback">Revisa que sea un preset JSON de Micutre.</string>
+    <string name="preset_read_failed">No se pudo leer el archivo.</string>
+    <string name="preset_too_large">El archivo supera el tamaño permitido para un preset.</string>
+    <string name="preset_missing_effects">El JSON no contiene parámetros de efectos reconocidos.</string>
+    <string name="custom_effect_name">Efecto personalizado</string>
+    <string name="microphone_button_start">Iniciar micrófono</string>
+    <string name="microphone_button_stop">Detener micrófono</string>
+    <string name="microphone_active">MICRÓFONO ACTIVO</string>
+    <string name="microphone_start_failed">NO SE PUDO INICIAR</string>
+    <string name="microphone_permission_needed">SE NECESITA ACCESO AL MICRÓFONO</string>
+    <string name="audio_engine_unavailable">AUDIO NO DISPONIBLE</string>
+    <string name="audio_engine_missing">FALTA EL MOTOR DE AUDIO</string>
+    <string name="settings_title">Configuración</string>
+    <string name="settings_open">⚙ Configuración</string>
+    <string name="settings_subtitle">Personaliza Micutre</string>
+    <string name="settings_language">Idioma</string>
+    <string name="settings_language_dialog">Selecciona el idioma</string>
+    <string name="language_spanish">Español</string>
+    <string name="language_english">English</string>
+    <string name="language_chinese">简体中文</string>
+    <string name="settings_reduce_motion">Reducir animaciones</string>
+    <string name="settings_reduce_motion_summary">Desactiva los rebotes y las ondas animadas.</string>
+    <string name="settings_bold_text">Texto en negrita</string>
+    <string name="settings_bold_text_summary">Usa letras más gruesas en toda la aplicación.</string>
+    <string name="settings_keep_screen_on">Mantener pantalla encendida</string>
+    <string name="settings_keep_screen_on_summary">Durante el uso del micrófono en vivo.</string>
+    <string name="settings_about">Acerca de</string>
+    <string name="settings_version">Versión %1$s</string>
+    <string name="back_to_microphone">← Volver al micrófono</string>
+    <string name="language_changed">El idioma se aplicará al reiniciar la pantalla.</string>
+    <string-array name="language_names">
+        <item>@string/language_spanish</item>
+        <item>@string/language_english</item>
+        <item>@string/language_chinese</item>
+    </string-array>
+</resources>

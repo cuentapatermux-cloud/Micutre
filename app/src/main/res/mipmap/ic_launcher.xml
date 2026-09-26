@@ -1,0 +1,16 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="48dp"
+    android:height="48dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <path android:fillColor="#FFFFFFFF" android:pathData="M0,0h108v108H0z" />
+    <group android:rotation="-45" android:scaleX="0.72" android:scaleY="0.72" android:pivotX="54" android:pivotY="54">
+        <path android:fillColor="#55A7FF" android:pathData="M27,48v5c0,15 12,27 27,27v10h-9v7h18v-7h-9V80c15,0 27,-12 27,-27v-5h-7v5c0,11 -9,20 -20,20s-20,-9 -20,-20v-5z" />
+        <path android:fillColor="#1769C2" android:pathData="M52,88h4v10h-4zM41,96h26v7H41z" />
+        <path android:fillColor="#171C27" android:strokeColor="#080B11" android:strokeWidth="1.5" android:pathData="M54,13c-11,0 -19,8 -19,19v20c0,11 8,19 19,19s19,-8 19,-19V32c0,-11 -8,-19 -19,-19z" />
+        <path android:fillColor="#30394A" android:pathData="M44,22c3,-4 8,-6 12,-6 -5,6 -7,13 -7,22v10c0,5 1,9 3,13 -8,-2 -13,-9 -13,-17V33c0,-4 2,-8 5,-11z" />
+        <path android:fillColor="#68758A" android:pathData="M43,28c2,-3 5,-4 8,-5 -3,4 -4,9 -4,14v7c-2,-1 -4,-2 -6,-2v-9c0,-2 1,-4 2,-5z" />
+        <path android:fillColor="#FFFFFF" android:pathData="M63,21l2.2,5.8L71,29l-5.8,2.2L63,37l-2.2,-5.8L55,29l5.8,-2.2zM69,39l1.2,3.1L73,43.3l-2.8,1.1L69,47.5l-1.2,-3.1L65,43.3l2.8,-1.2z" />
+        <path android:fillColor="#AEB8C8" android:pathData="M41,32a1,1 0,1 0,2 0a1,1 0,1 0,-2 0M47,31a1,1 0,1 0,2 0a1,1 0,1 0,-2 0M53,31a1,1 0,1 0,2 0a1,1 0,1 0,-2 0M59,31a1,1 0,1 0,2 0a1,1 0,1 0,-2 0M65,32a1,1 0,1 0,2 0a1,1 0,1 0,-2 0M39,37a1,1 0,1 0,2 0a1,1 0,1 0,-2 0M45,37a1,1 0,1 0,2 0a1,1 0,1 0,-2 0M51,37a1,1 0,1 0,2 0a1,1 0,1 0,-2 0M57,37a1,1 0,1 0,2 0a1,1 0,1 0,-2 0M63,37a1,1 0,1 0,2 0a1,1 0,1 0,-2 0M39,43a1,1 0,1 0,2 0a1,1 0,1 0,-2 0M45,43a1,1 0,1 0,2 0a1,1 0,1 0,-2 0M51,43a1,1 0,1 0,2 0a1,1 0,1 0,-2 0M57,43a1,1 0,1 0,2 0a1,1 0,1 0,-2 0M63,43a1,1 0,1 0,2 0a1,1 0,1 0,-2 0M41,49a1,1 0,1 0,2 0a1,1 0,1 0,-2 0M47,49a1,1 0,1 0,2 0a1,1 0,1 0,-2 0M53,49a1,1 0,1 0,2 0a1,1 0,1 0,-2 0M59,49a1,1 0,1 0,2 0a1,1 0,1 0,-2 0M65,49a1,1 0,1 0,2 0a1,1 0,1 0,-2 0" />
+    </group>
+</vector>

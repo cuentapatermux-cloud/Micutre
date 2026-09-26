@@ -1,0 +1,7 @@
+{
+  "name": "Voz espacial",
+  "pitchSemitones": 2,
+  "echoMix": 0.35,
+  "echoDelayMs": 220,
+  "robotMix": 0
+}
