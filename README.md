@@ -1,25 +1,29 @@
 <div align="center">
   <img src="docs/micutre-icon.svg" width="320" alt="Micutre microphone icon with a white outline on a transparent background" />
-  <h1>Micutre</h1>
+  <h1>Micutre — Android Bluetooth Microphone</h1>
   <p>Copyright 2026 PollNull</p>
-  <p><strong>Turn your phone into a wireless microphone for a Bluetooth speaker.</strong></p>
+  <p><strong>Open-source Android app for using your phone as a microphone with a Bluetooth speaker, voice effects, and a soundboard.</strong></p>
   <p>Android · Kotlin · C++ · Oboe</p>
 </div>
 
 ---
 
-Micutre streams your phone's microphone audio live to the Bluetooth speaker connected to Android. It also includes custom voice effects through JSON presets and a soundboard where you can import your own audio files.
+Micutre is a free and open-source Android app that streams live microphone audio from your phone to a connected Bluetooth speaker. It includes voice effects, custom effect presets imported through JSON, and a soundboard for audio files you import.
 
-> **Status:** personal project in development — version 1.0.0.
+> **Status:** learning project · v1.0.0 available.
+
+## Download
+
+Download the [Micutre v1.0.0 APK](https://github.com/pollnull/Micutre/releases/tag/v1.0.0), or browse [all releases](https://github.com/pollnull/Micutre/releases).
 
 ## Features
 
-- Live microphone, volume control, and connected speaker detection.
-- Voice effects: higher or lower pitch, echo, and robot voice.
-- Soundboard for audio imported from your phone.
+- Use an Android phone as a live microphone for a connected Bluetooth speaker, with volume control and connection status.
+- Voice effects including higher or lower pitch, echo, and robot voice.
+- Import custom voice-effect presets in JSON format; see [`examples/voz-espacial.json`](examples/voz-espacial.json).
+- Soundboard for playing audio files imported from your phone.
 - Imports MP3, WAV, M4A/AAC, OGG/Vorbis, Opus, and FLAC, depending on the decoders available on Android.
 - Interface in Spanish, English, and Simplified Chinese, with reduced motion and bold text options.
-- Import JSON presets to create custom voice effects; see the example in [`examples/voz-espacial.json`](examples/voz-espacial.json).
 
 ## Build
 
@@ -76,8 +80,8 @@ The Space Grotesk font is licensed under the SIL Open Font License 1.1. The [`ap
 
 ## Contributing
 
-For now, you can open an *issue* to report a bug or suggest an improvement. Contribution guidelines will be added once the project workflow is established.
+Open an [issue](https://github.com/pollnull/Micutre/issues) to report a bug or suggest an improvement. Contribution guidelines will be added once the project workflow is established.
 
 ## A note
 
-I’m a young student still in school. Micutre is a learning project, so I may not be able to fix every issue right away. Even so, I appreciate every bug report.
+Micutre is a learning project, so fixes may take time. Bug reports and suggestions are appreciated.
