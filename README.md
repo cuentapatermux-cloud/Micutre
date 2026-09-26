@@ -6,6 +6,15 @@
   <p>Android · Kotlin · C++ · Oboe</p>
 </div>
 
+<p align="center">
+  <a href="https://github.com/pollnull/Micutre/blob/main/LICENSE">
+    <img src="https://img.shields.io/github/license/pollnull/Micutre" alt="License" />
+  </a>
+  <a href="https://github.com/pollnull/Micutre/releases/latest">
+    <img src="https://img.shields.io/github/v/release/pollnull/Micutre" alt="Latest release" />
+  </a>
+</p>
+
 ---
 
 Micutre is a free and open-source Android app that streams live microphone audio from your phone to a connected Bluetooth speaker. It includes voice effects, custom effect presets imported through JSON, and a soundboard for audio files you import.
