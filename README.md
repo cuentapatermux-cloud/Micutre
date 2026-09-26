@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="docs/micutre-icon.svg" width="128" alt="Micutre microphone icon with a white outline on a transparent background" />
+  <img src="docs/micutre-icon.svg" width="320" alt="Micutre microphone icon with a white outline on a transparent background" />
   <h1>Micutre</h1>
   <p>Copyright 2026 PollNull</p>
   <p><strong>Turn your phone into a wireless microphone for a Bluetooth speaker.</strong></p>
