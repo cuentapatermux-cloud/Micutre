@@ -10,7 +10,7 @@
 
 Micutre streams your phone's microphone audio live to the Bluetooth speaker connected to Android. It also includes custom voice effects through JSON presets and a soundboard where you can import your own audio files.
 
-> **Status:** personal project in development — version 0.1.0.
+> **Status:** personal project in development — version 1.0.0.
 
 ## Features
 
