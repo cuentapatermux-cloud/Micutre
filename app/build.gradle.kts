@@ -5,6 +5,11 @@ plugins {
     id("org.jetbrains.kotlin.android")
 }
 
+val releaseStoreFile = providers.gradleProperty("MICUTRE_RELEASE_STORE_FILE")
+val releaseStorePassword = providers.gradleProperty("MICUTRE_RELEASE_STORE_PASSWORD")
+val releaseKeyAlias = providers.gradleProperty("MICUTRE_RELEASE_KEY_ALIAS")
+val releaseKeyPassword = providers.gradleProperty("MICUTRE_RELEASE_KEY_PASSWORD")
+
 android {
     namespace = "com.miclite.voz"
     compileSdk = 35
@@ -15,12 +20,28 @@ android {
         minSdk = 23
         targetSdk = 35
         versionCode = 1
-        versionName = "0.1.0"
+        versionName = "1.0.0"
 
         externalNativeBuild {
             cmake {
                 arguments += "-DANDROID_STL=c++_shared"
             }
+        }
+    }
+
+    signingConfigs {
+        create("release") {
+            // Gradle properties should use forward slashes for Windows paths.
+            storeFile = file(releaseStoreFile.get().replace('\\', '/'))
+            storePassword = releaseStorePassword.get()
+            keyAlias = releaseKeyAlias.get()
+            keyPassword = releaseKeyPassword.get()
+        }
+    }
+
+    buildTypes {
+        getByName("release") {
+            signingConfig = signingConfigs.getByName("release")
         }
     }
 
